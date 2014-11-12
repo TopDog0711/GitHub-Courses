@@ -10,6 +10,11 @@ namespace Courses.Models
         public List<Course> Courses { get; set; }
     }
 
+    public class CourseDetailModel
+    {
+        public Course course { get; set; }
+    }
+
     public class Course
     {
         public string id { get; set; }

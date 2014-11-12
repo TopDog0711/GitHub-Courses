@@ -19,7 +19,7 @@
     .SetWidth(30)
     .RenderValueAs(d =>
         @<b>
-            @Html.ActionLink("Details", "Index", new { id = d.id })
+            @Html.ActionLink("Details", "Details", new { id = d.id })
         </b>);
 
     columns.Add(o => o.name);

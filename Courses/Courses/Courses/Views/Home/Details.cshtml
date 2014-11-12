@@ -1,0 +1,45 @@
+﻿@model Courses.Models.CourseDetailModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<form role="form">
+    <div class="form-group">
+        @Html.LabelFor(o=>o.course.name)
+        @Html.DisplayFor(o=>o.course.name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.course.code)
+        @Html.DisplayFor(o => o.course.code)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.course.description)
+        @Html.DisplayFor(o => o.course.description)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.course.start_at)
+        @Html.DisplayFor(o => o.course.start_at)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.course.end_at)
+        @Html.DisplayFor(o => o.course.end_at)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.course.created_at)
+        @Html.DisplayFor(o => o.course.created_at)
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.course.updated_at)
+        @Html.DisplayFor(o => o.course.updated_at)
+    </div>
+
+</form>
