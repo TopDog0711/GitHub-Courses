@@ -35,3 +35,6 @@ C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.EntityFramework.
 C:\GitHub\Courses\Courses\Courses\obj\Debug\Courses.dll
 C:\GitHub\Courses\Courses\Courses\obj\Debug\Courses.pdb
 C:\GitHub\Courses\Courses\Courses\bin\GridMvc.dll
+C:\GitHub\Courses\Courses\Courses\obj\Debug\Courses.csprojResolveAssemblyReference.cache
+C:\GitHub\Courses\Courses\Courses\bin\Common.dll
+C:\GitHub\Courses\Courses\Courses\bin\Common.pdb

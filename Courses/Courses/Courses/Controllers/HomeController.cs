@@ -8,6 +8,8 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Common;
+
 
 namespace Courses.Controllers
 {
@@ -18,8 +20,8 @@ namespace Courses.Controllers
 
             CourseListViewModel vm = new CourseListViewModel();
 
-            string Token = await GetToken();
-            vm.Courses = await GetCourses(Token);
+            string Token = await CoursesApi.GetToken();
+            vm.Courses = await CoursesApi.GetCourses(Token);
                        
 
             return View(vm);
@@ -27,8 +29,8 @@ namespace Courses.Controllers
 
         public async Task<ActionResult> Details(int id)
         {
-            string Token = await GetToken();
-            Course course = await GetCourseById(Token, id);
+            string Token = await CoursesApi.GetToken();
+            Course course = await CoursesApi.GetCourseById(Token, id);
             CourseDetailModel VM = new CourseDetailModel();
             VM.course = course;
 
@@ -36,79 +38,8 @@ namespace Courses.Controllers
         }
 
 
-        private async Task<string> GetToken()
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                string TokenURL = "http://canvas-api.herokuapp.com/api/v1/tokens";
-
-                client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json"));
-
-                Token token = null;
-
-                HttpResponseMessage response = await client.PostAsync(TokenURL, null);
-                if (response.IsSuccessStatusCode)
-                {
-                    token = JsonConvert.DeserializeObject<Token>(await response.Content.ReadAsStringAsync());
-
-                    return token.token;
-                }
-
-
-            }
-
-            return "";
-
-
-        }
-
-        private async Task<List<Course>> GetCourses(string Token)
-        {
-            using (HttpClient client = new HttpClient())
-            {
-
-
-                string CoursesUrl = "http://canvas-api.herokuapp.com/api/v1/courses";
-
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Token);
-
-                string JSONString = await client.GetStringAsync(CoursesUrl);
-
-                List<Course> Courses = JsonConvert.DeserializeObject<List<Course>>(JSONString);
-
-                return Courses;
-
-
-            }
-        }
-
-        private async Task<Course> GetCourseById(string Token, int Id)
-        {
-            using (HttpClient client = new HttpClient())
-            {
-
-
-                string CoursesUrl = "http://canvas-api.herokuapp.com/api/v1/courses/" + Id;
-
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(Token);
-
-                string JSONString = await client.GetStringAsync(CoursesUrl);
-
-                Course course = JsonConvert.DeserializeObject<Course>(JSONString);
-
-                return course;
-
-
-            }
-        }
       
     }
 
-    public class Token
-    {
-        public string token { get; set; }
-    }
+
 }

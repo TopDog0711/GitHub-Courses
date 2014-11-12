@@ -1,0 +1,6 @@
+C:\GitHub\Courses\Courses\Common\bin\Debug\Common.dll
+C:\GitHub\Courses\Courses\Common\bin\Debug\Common.pdb
+C:\GitHub\Courses\Courses\Common\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\Courses\Courses\Common\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\Courses\Courses\Common\obj\Debug\Common.dll
+C:\GitHub\Courses\Courses\Common\obj\Debug\Common.pdb
