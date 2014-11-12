@@ -1,4 +1,3 @@
-C:\GitHub\Courses\Courses\Courses\obj\Debug\Courses.csprojResolveAssemblyReference.cache
 C:\GitHub\Courses\Courses\Courses\bin\Courses.dll.config
 C:\GitHub\Courses\Courses\Courses\bin\Courses.dll
 C:\GitHub\Courses\Courses\Courses\bin\Courses.pdb
@@ -8,10 +7,6 @@ C:\GitHub\Courses\Courses\Courses\bin\EntityFramework.SqlServer.dll
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.Core.dll
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.dll
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.Security.Cookies.dll
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.Security.dll
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.Security.OAuth.dll
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Web.Infrastructure.dll
 C:\GitHub\Courses\Courses\Courses\bin\Newtonsoft.Json.dll
 C:\GitHub\Courses\Courses\Courses\bin\Owin.dll
@@ -37,9 +32,6 @@ C:\GitHub\Courses\Courses\Courses\bin\EntityFramework.SqlServer.xml
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.Core.xml
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\GitHub\Courses\Courses\Courses\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.xml
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.Security.xml
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.Security.Cookies.xml
-C:\GitHub\Courses\Courses\Courses\bin\Microsoft.Owin.Security.OAuth.xml
 C:\GitHub\Courses\Courses\Courses\obj\Debug\Courses.dll
 C:\GitHub\Courses\Courses\Courses\obj\Debug\Courses.pdb
+C:\GitHub\Courses\Courses\Courses\bin\GridMvc.dll
